@@ -28,7 +28,9 @@
 */
 
 // Code Here 
-
+function first(p1[], p2()){
+  p2.callback()
+}
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
