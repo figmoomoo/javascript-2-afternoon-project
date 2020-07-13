@@ -119,15 +119,17 @@ let methodCollection = {}
 */
 
 //Code Here
-function alertHello(){
-  alert()
+methodCollection.alertHello = function(){
+  alert('hello')
 }
-function logHello(){
+methodCollection.logHello = function(){
   console.log("hello")
 }
 /*
   Now call your alertHello and logHello methods.
 */
+methodCollection.alertHello()
+methodCollection.logHello()
 
 //Code Here
 
@@ -139,7 +141,13 @@ function logHello(){
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  let person = {};
+  person.name = name;
+  person.birthday = birthday;
+  person.ssn = ssn
+  return person;
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -148,3 +156,10 @@ function logHello(){
 */
 
 //Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  let card = {};
+  card.cardNumber = card.cardNumber;
+  card.expirationDate = expirationDate;
+  card.securityCode = securityCode;
+  return card;
+}

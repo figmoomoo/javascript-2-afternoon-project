@@ -72,7 +72,7 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 function reversedLooper(letters){
-  for(let i = letters.length - 1; i >= 0; i++){
+  for(let i = letters.length - 1; i >= 0; i--){
     alert(letters[i])
   }    
 }
@@ -91,7 +91,13 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 function evenFinder(nums){
-  return evenFinder(nums % 2);
+  let arr = []
+  for(let i = 0; i < nums.length; i++){
+    if (nums[i] % 2 === 0){
+      arr.push(nums[i]);
+    }
+  }
+  return arr;
 }
 
 
@@ -121,7 +127,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
-
+function divider(numbersArray){
+  let arr = [[], []]
+  for(let i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0){
+      arr[0].push(numbersArray[i]);
+    }
+    else{
+      arr[1].push(numbersArray[i]);
+    }
+  }
+  return arr;
+}
+divider(numbersArray)
 
 
 ////////// PROBLEM 7 //////////
@@ -143,7 +161,21 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
+//I don't know what I'm doing wrong here...
+
+function finder(array){
+  let randomNumber = getRandomArbitrary;
+  for(let i = 0; i < numbers.length; i++){
+    if(array[i] === randomNumber){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -172,7 +204,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+// function removeItem(array, item){
+//   for(let i = 0; i = array.length; i++){
+//     if(array[i] === item){
+//       return array.splice(i, 1)
+//     }
+//   }
+// }
 
 
 ////////// PROBLEM 9 //////////
@@ -182,7 +220,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  let array = [];
+  for(let i = 0; i <215; i++){
+    array[i] = i + 1;
+  }
+  return array
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -198,8 +242,16 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(array){
+  let newNumbers = [];
+  for(let i = 0; i < array.length; i++){
+    newNumbers.push(Number(array[i]));
+    newNumbers[i] += 10;
+  }
+  return newNumbers
+}
 
-
+addTen(numbers)
 
 ////////// PROBLEM 11 //////////
 
@@ -223,7 +275,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2){
+  if(arr1 > arr2){
+    return arr1;
+  }
+  else{
+    return arr2;
+  }
+}
 
 
 /*
@@ -235,7 +294,11 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2){
+  let arr3 = arr1 + arr2;
+  arr3 = [[], []];
+  return arr3;
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -297,7 +360,7 @@ var colt = {
 */
 
 //Code Here
-
+let users = [];
 
 
 /*
@@ -318,6 +381,9 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
+const User2 = {
+  
+}
 
 
 
